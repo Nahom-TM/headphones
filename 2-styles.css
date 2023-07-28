@@ -6,6 +6,11 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .navigation {
     display: flex;
     list-style: none;
@@ -63,14 +68,16 @@ body{
 .line-break{
     display: block;
 }
-@media screen and (max-width: 780px){
-    .naviation{
-        display: none;
-    }
-    .header-container{
-        display: flex;
-        justify-content: center;
-    }
+#icon-menu {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    stroke-width: 0;
+    stroke: white;
+    fill: white;
+  }
+.small-screen, .navigation1{
+    display: none;
 }
 .whatwedo {
     background-color: white;
@@ -115,26 +122,30 @@ body{
     display: flex;
     flex-direction: row;
     gap: 80px;
-    
+    position: relative;
+    text-align: center;
+    color: white;
 }
-.pentagon {
-position: relative;
-width: 80px;
-border-width: 80px 25px 0;
-border-style: solid;
-border-color:  rgb(230, 106, 126) transparent;
-color:white;
-text-align: center;
+@media screen and (max-width:720px){
+    .small-screen{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .header-container{
+        flex-direction: row-reverse;
+    }
+    .content .heading{
+        flex-wrap: wrap;
+    }
+    .icon1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pentagon1{
+        flex-direction: column;
+        align-items: center;
+    }
 }
-.pentagon:before {
-content: "";
-position: absolute;
-height: 100;
-width: 80;
-top: -130px;
-left: -25px;
-border-width: 0px 65px 50px;
-border-style: solid;
-border-color: transparent transparent rgb(230, 106, 126);
-}
- 
+      

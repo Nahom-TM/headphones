@@ -6,6 +6,11 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .navigation {
     display: flex;
     list-style: none;
@@ -64,16 +69,17 @@ body{
 .line-break{
     display: block;
 }
-@media screen and (max-width: 780px){
-    .naviation{
-        display: none;
-    }
-    .header-container{
-        display: flex;
-        justify-content: center;
-    }
+#icon-menu {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    stroke-width: 0;
+    stroke: white;
+    fill: white;
+  }
+.small-screen, .navigation1{
+    display: none;
 }
-
 .whatwedo {
     background-color: white;
     color:black;
@@ -101,4 +107,23 @@ body{
   .paragraph2 {
     text-align: center;
   }
+@media screen and (max-width:720px){
+    .small-screen{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .header-container{
+        flex-direction: row-reverse;
+    }
+    .content .heading{
+        flex-wrap: wrap;
+    }
+    .icon1{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
  
