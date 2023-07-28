@@ -1,0 +1,152 @@
+body{
+    background-image: url(headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.small-screen{
+    display: flex;
+    color: blue;
+    justify-content: start;
+}
+.content{
+    margin-top: 333px;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.navigation li{ 
+    display: inline-block;
+    margin-left: 30px;
+}
+.navigation a{
+    color: white;
+}
+.navigation a:hover{
+    color: red;
+}
+/*.heading{
+    line-height: 0;
+}*/
+.button{
+    background-color: rgb(248, 45, 79);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.button .button1{
+    background-color: rgb(248, 45, 79) ;
+    border: none;
+    color: white;
+}
+.button:hover{
+   background-color: rgb(199, 44, 70);
+}
+.button .button1:hover{
+    background-color: rgb(199, 44, 70);
+}
+.paragraph{
+    text-align: center;
+    color: #fff;
+}
+.line-break{
+    display: block;
+}
+@media screen and (max-width: 780px){
+    .naviation{
+        display: none;
+    }
+    .header-container{
+        display: flex;
+        justify-content: center;
+    }
+}
+.whatwedo {
+    background-color: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.paragraph2{
+    text-align: center;
+}
+.icon1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color:rgb(243, 47, 47);
+  }
+.paragraph2 {
+    text-align: center;
+  }
+.results {
+    background-image: url(headphones_hero_2.jpg);
+    margin-top: 70px;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.paragraph3{
+    text-align: center;
+}
+.pentagon1{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    
+}
+.pentagon {
+position: relative;
+width: 80px;
+border-width: 80px 25px 0;
+border-style: solid;
+border-color:  rgb(230, 106, 126) transparent;
+color:white;
+text-align: center;
+}
+.pentagon:before {
+content: "";
+position: absolute;
+height: 100;
+width: 80;
+top: -130px;
+left: -25px;
+border-width: 0px 65px 50px;
+border-style: solid;
+border-color: transparent transparent rgb(230, 106, 126);
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none; 
+  border-bottom: 1px solid #ccc;
+}
